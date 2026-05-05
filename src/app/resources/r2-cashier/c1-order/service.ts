@@ -150,7 +150,7 @@ export class OrderService {
             htmlMessage += `-កាលបរិច្ឆេទ\u2003\u2003៖ ${currentDateTime}\n`;
 
             // Send
-            await this.telegramService.sendHTMLMessage(htmlMessage);
+            // await this.telegramService.sendHTMLMessage(htmlMessage);
 
             const notifications = await Notifications.findAll({
                 attributes: ['id', 'read'],
